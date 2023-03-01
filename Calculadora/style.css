@@ -1,14 +1,20 @@
+html, body{
+  height: 100%;
+}
+
 body {
     margin: 0;
     padding: 0;
     font-family: Arial, sans-serif;
     background-color: #f1f1f1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     
   }
   
   .calculadora {
     width: 350px;
-    margin: 300px auto;
     background-color: #222;
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
@@ -46,7 +52,6 @@ body {
     font-weight: bold;
     color: #fff;
     background-color: #333;
-    
     border: none;
     cursor: pointer;
     transition: background-color 0.3s;
@@ -66,3 +71,29 @@ body {
     background-color: #666;
     border-radius: 5px;
   }
+
+  @media (max-width: 768px){
+
+    .calculadora {
+      width: 100%;
+      height: 100%;
+    }
+
+    .resultado input {
+      height: 38vh;
+      font-size: 60px;
+    }
+
+    button{
+      height: 127px;
+    }
+
+  @media (max-height: 770px){
+    button{
+      height: 86px;
+    }
+  }
+
+  }
+    
+ 
